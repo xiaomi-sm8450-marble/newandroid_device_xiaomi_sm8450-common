@@ -98,6 +98,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 $(call soong_config_set, qtilocation, feature_nhz, false)
 
 # Kernel
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true

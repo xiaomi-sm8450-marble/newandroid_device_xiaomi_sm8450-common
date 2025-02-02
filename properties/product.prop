@@ -1,3 +1,12 @@
 # Audio
 audio.offload.min.duration.secs=30
 media.stagefright.audio.deep=false
+
+# USB debugging
+persist.service.debuggable=1
+persist.service.adb.enable=1
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+ro.force.debuggable=true
